@@ -15,7 +15,9 @@ const Navbar = () => {
 <nav class="navbar navbar-expand-lg bg-warning">
   <div class="container-fluid">
   <Link className="navbar-brand text-dark p-2" to="/"><h3>KOS</h3></Link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <Link className="text-light navbar-brand border border-light p-2 px-3" to="/cart">Cart {Cart.length}</Link>
+
+    {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +33,7 @@ const Navbar = () => {
         </li>
       </ul>
       <Link className="text-light navbar-brand border border-light p-2 px-3" to="/cart">Cart {Cart.length}</Link>
-    </div>
+    </div> */}
   </div>
 </nav>
 </>
